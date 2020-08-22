@@ -1,0 +1,60 @@
+/* For portfolio.htlm */
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+/* Фильтры-кнопки */
+.filters {
+  display: flex;
+  align-items: center;
+}
+
+.filters .link {
+  color: var(--primary-black-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+.filters .link:hover,
+.filters .link:focus {
+  color: var(--link-color);
+}
+
+.filters .link.current {
+  background-color: var(--link-color);
+  color: var(--primary-white-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* примеры работ - ссылки */
+.portfolio a {
+  text-decoration: none;
+}
+
+.portfolio h2 {
+  color: var(--primary-black-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
+.portfolio p {
+  color: #757575;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+}
