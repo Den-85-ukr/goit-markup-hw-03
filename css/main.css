@@ -1,10 +1,19 @@
 /* For index.htlm */
+/* .container {  
+
+} */
+
 /* Hero */
 .hero {
   background-color: #2f303a;
 }
+
+.hero-content {
+  max-width: 700px;
+}
+
 .hero-title {
-  color:var(--primary-white-color);
+  color: var(--primary-white-color);
   text-transform: uppercase;
   text-align: center;
   font-size: 44px;
