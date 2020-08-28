@@ -1,16 +1,29 @@
 /* For portfolio.htlm */
 
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1440px;
-  padding-left: 20px;
-  padding-right: 20px;
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 /* Фильтры-кнопки */
 
-.filters .link {
+.filters-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filters-item {
+  width: calc((100% - 8px * 4) / 5);
+  margin-right: 8px;
+  margin-bottom: 50px;
+}
+
+.filters-item:nth-child(5n) {
+  margin-right: 0;
+}
+
+.filters-list .link {
   padding: 6px 22px;
   border: 1px solid transparent;
   border-radius: 4px;
@@ -22,12 +35,12 @@
   text-align: center;
 }
 
-.filters .link:hover,
-.filters .link:focus {
+.filters-list .link:hover,
+.filters-list .link:focus {
   color: var(--link-color);
 }
 
-.filters .link.current {
+.filters-list .link.current {
   background-color: var(--link-color);
   color: var(--primary-white-color);
   font-weight: 500;
@@ -36,16 +49,37 @@
   text-align: center;
 }
 
-button {
-  font-family: inherit;
+/* примеры работ - ссылки */
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-/* примеры работ - ссылки */
-.portfolio a {
+.portfolio-item {
+  width: calc((100% - 30px * 2) / 3);
+  margin-right: 30px;
+  margin-bottom: 30px;
+}
+
+.portfolio-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.portfolio-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+
+.portfolio-list a {
   text-decoration: none;
 }
 
-.portfolio h2 {
+.portfolio-text {
+  padding: 20px 24px;
+  margin: 0;
+}
+
+.portfolio-list .portfolio-title {
   color: var(--primary-black-color);
   font-weight: 700;
   font-size: 18px;
@@ -53,7 +87,7 @@ button {
   letter-spacing: 0.06em;
 }
 
-.portfolio p {
+.portfolio-list .portfolio-p {
   color: #757575;
   font-weight: 400;
   font-size: 14px;
