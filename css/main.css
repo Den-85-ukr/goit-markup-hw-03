@@ -1,12 +1,13 @@
 /* For index.htlm */
 
 .section {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /* Hero */
 .hero {
+  /* padding-bottom: 94px; */
+
   background-color: #2f303a;
 }
 
@@ -16,6 +17,7 @@
   margin-right: auto;
   margin-left: auto;
   max-width: 700px;
+
   text-align: center;
 }
 
@@ -46,6 +48,11 @@
 }
 
 /* Особенности-features */
+
+.features {
+  padding-top: 94px;
+}
+
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -88,6 +95,7 @@
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 50px;
+  padding-top: 0;
 
   font-weight: 700;
   font-size: 36px;
@@ -115,6 +123,12 @@
 }
 
 /* Наша команда */
+.team {
+  padding-top: 94px;
+
+  background-color: #F5F4FA;
+}
+
 .team-list {
   display: flex;
   flex-wrap: wrap;

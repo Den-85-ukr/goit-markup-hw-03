@@ -65,14 +65,15 @@ img {
 }
 
 .page-header {
-  margin-top: 25px;
-  margin-bottom: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   background-color: var(--primary-white-color);
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  border-bottom: 1px solid #ECECEC;
 }
 
 .page-header .flexbox {
@@ -82,15 +83,13 @@ img {
 
 /* Footer */
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
   background-color: #2f303a;
   font-family: Roboto, sans-serif;
   font-weight: 400;
   letter-spacing: 0.03em;
-}
-
-.content-box {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .adds {
